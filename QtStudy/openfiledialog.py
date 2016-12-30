@@ -36,7 +36,7 @@ class Example(QtGui.QMainWindow):
         filename = QtGui.QFileDialog.getOpenFileName(self, 'Open file', '/home/borney/data')
         fname = open(filename)
         data = fname.read()
-        self.edt.setText(data.decode('utf-8'))
+        self.edt.setText(data)
 
 
 app = QtGui.QApplication(sys.argv)
