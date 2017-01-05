@@ -1,0 +1,11 @@
+The sum of [x] and [y] is [x + y].
+
+[import time]
+
+Dear [name].
+    your email is [email]
+    your language is [language]
+
+    good luck, [time.asctime()]
+
+        Thank you
