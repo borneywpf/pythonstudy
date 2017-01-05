@@ -3,7 +3,7 @@
 
 # database.py
 
-import sys, shelve
+import os, shelve
 
 
 def store_person(db):
@@ -51,7 +51,8 @@ def enter_command():
 
 
 def main():
-    database = shelve.open('/home/borney/data/work/github/pythonstudy/python_base2/database.db')
+    print os.getcwd()
+    database = shelve.open(os.getcwd() +'/database.db')
     try:
         while True:
             cmd = enter_command()
